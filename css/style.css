@@ -1,0 +1,3738 @@
+@import url("common.css");
+
+/* 시멘틱 태그 기본 사이즈 지정 */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 8px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000; 
+    border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #111; 
+}
+
+
+body{
+    text-decoration: none;
+    background: #3d3d3d;
+}
+
+header{
+    width:100%;
+    height:70px;
+    background:#000;
+}
+
+section{
+    width:990px;
+    margin:10px 10px 10px 0px;
+}
+
+aside{
+    width:400px;
+    height:680px;
+    background:#000;
+    margin:10px 0px;
+}
+
+body section, body aside{
+    float: left;
+}
+
+footer{
+    width:100%;
+    height:300px;
+    background:#000;
+}
+
+
+/* -- 요소들 id 위치 가운데 정렬 지정-- */
+
+#header{
+    width:1400px;
+    height:70px;
+    background:#000;
+    margin:0 auto;
+}
+
+#footer{
+    width:1400px;
+    height:300px;
+    margin:0 auto;
+}
+
+#center{
+    width:1400px;
+    margin:0 auto;
+    background-color:#eee;
+}
+
+/* 헤더(header) 영역 */
+
+#header div{
+    float:left;
+}
+
+.logo{
+    width:200px;
+    height:70px;
+}
+.headerTitle{
+    margin-left:350px;
+}
+
+.headerTitle li{
+    float: left;
+    width:150px;
+    text-align: center;
+}
+
+.headerTitle li a{
+    line-height: 70px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.loginBtn{
+    position: relative;
+    left:135px;
+    margin-top: 20px;
+    width:70px;
+    height:30px;
+    position: relative;
+    float: right;
+    border: 1px solid #ffce00;
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+
+.loginBtn a{
+    position: relative;
+    left:-15px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    width:100px;
+    height:30px;
+    color:#ffce00;
+    
+}
+
+/* alticle1 notice영역*/
+
+#article1{
+    width:990px;
+    height:50px;
+    background:#000;
+    margin-bottom: 10px;
+}
+
+.notice span{
+    font-weight: bold;
+    color:#fff;
+    line-height: 50px;
+}
+
+.notice span a{
+    color:#fff;
+}
+
+/*alticle2 moneyData영역*/
+
+#article2{
+    width:990px;
+    height:620px;
+    background:#000;
+    margin-bottom: 10px;
+}
+
+
+.moneyData1{
+    width:990px;
+    height:50px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.moneyData1 select{
+    margin: 5px 5px;
+    width:200px;
+    height:40px;
+    background: #000;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+.moneyData2Left, .moneyData2Right{
+    float: left;
+}
+
+.moneyData2{
+    width:990px;
+    height:80px;
+    background:#111;
+}
+.moneyData2Left{
+    width:390px;;
+    height:80px;
+    color:#f5b74c;
+}
+.moneyData2Left div:nth-child(1) span:nth-child(1){/*코인 가격*/
+    position: relative;
+    top:10px;
+    left:10px;
+    margin-right: 5px;
+    font-size:24pt;
+    font-weight:bold;
+}
+.moneyData2Left div:nth-child(1) span:nth-child(2){/*KRW*/
+    position: relative;
+    top:8px;
+    left:10px;
+}
+.moneyData2Left div:nth-child(1) span:nth-child(2){
+    font-size:10pt;
+}
+
+.moneyData2Left div:nth-child(2) span:nth-child(1){/*전일대비 글자*/
+    position: relative;
+    top:10px;
+    left:10px;
+    font-size:10pt;
+}
+
+.moneyData2Left div:nth-child(2) span:nth-child(2){/*전일대비 숫자*/
+    position: relative;
+    top:10px;
+    left:10px;
+    font-size:12pt;
+    font-weight: bold;
+}
+
+.moneyData2Right{
+    width:600px;
+    height:80px;
+    color:#fff;
+}
+
+.moneyData2Right .mdrIn{
+    
+    width:595px;
+    height:30px;
+}
+
+.moneyData2Right .mdrIn > div{
+    position: relative;
+    top:5px;
+    left:5px;
+    float: left;
+    width:295px;
+    height:35px;
+    line-height: 35px;
+}
+
+.moneyData2Right .mdrIn > div span:nth-child(2),
+.moneyData2Right .mdrIn > div span:nth-child(3){
+    float: right;
+}
+
+.moneyData2Right .mdrIn > div span:nth-child(1){
+    margin-left:5px;
+}
+.moneyData2Right .mdrIn > div span:nth-child(3){
+    margin-right: 15px;
+}
+.moneyData2Right .mdrIn > div span:nth-child(2){
+    margin-right: 15px;
+}
+
+
+.moneyData3{
+    width:100%;
+    height:50px;
+    background:#111;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.moneyData3 div{
+    margin-left: 10px;
+    width:300px;
+    line-height: 50px;
+    float: left;
+}
+
+.moneyData3 div span:nth-child(2){
+    font-weight: bold;
+}
+
+
+.moneyData4{
+    width:990px;
+    height:440px;
+}
+
+.chartHead{
+    width:990px;
+    height:50px;
+    background:#000;
+    border-top:1px solid rgba(255,255,255,0.3);
+    border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+.chartHead li{
+    height:50px;
+    line-height: 50px;
+    float: left;
+    margin-left: 20px;
+}
+
+.chartHead li:not(:nth-child(1)){
+    position: relative;
+    left:500px;
+}
+
+.chartHead li a{
+    line-height: 50px;
+    color:#fff;
+}
+.chartHead li a img{
+    width:10px;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.chartBody{
+    width:990px;
+    height:390px;
+    background:#000;
+}
+
+/*article3 영역, 호가 매수매도 */
+#article3{
+    width:990px;
+    height: 720px;
+    margin-bottom: 10px;
+}
+
+.moneyQuote,.tradeChart{
+    float: left;
+    width:490px;
+    height:620px;
+    color:#fff;
+}
+
+.moneyQuote{
+    margin-right: 10px;
+}
+
+.quoteHead{
+    width:490px;
+    height:50px;
+    background:#000;
+}
+
+.quoteHead div{
+    line-height: 50px;
+    float: left;
+    width:163px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.quoteHead > div:nth-child(1){
+    box-shadow: inset 0px -3px 0px #f5b74c;
+    color:#f5b74c;
+}
+.quoteBody{
+    width:490px;
+    height:620px;
+    background: #555;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+.normalQuote{
+    width:485px;
+    height:840px;
+    background:#111;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+
+.normalQuote tr td{
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+
+.totalQuote{
+    width:485px;
+    height:840px;
+    background:#000;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+
+.totalQuote tr td{
+    border:1px solid rgba(255,255,255,0.3);
+}
+
+.orderQuote{
+    width:485px;
+    background:#000;
+}
+.orderQuote tr:nth-child(1){
+    height:50px;
+}
+.orderQuote tr:not(:nth-child(1)){
+    height:40px;
+}
+.orderQuote tr td{
+    border:1px solid rgba(255,255,255,0.3);
+}
+.orderQuote tr:not(:nth-child(1)) td:nth-child(1){
+    background: rgba(255,0,42,0.2);
+    text-align: center;
+}
+.orderQuote tr:not(:nth-child(1)) td:nth-child(5){
+    background: rgba(0,18,255,0.2);
+    text-align: center;
+}
+.orderQuote tr:not(:nth-child(1)) td:nth-child(2){
+    text-align: right;
+}
+.orderQuote tr:not(:nth-child(1)) td:nth-child(3){
+    text-align: center;
+}
+.orderQuote tr td ul li{
+    float: left;
+}
+
+.orderQuote tr td span:nth-child(3),
+.orderQuote tr td span:nth-child(4),
+.orderQuote tr td span:nth-child(5),
+.orderQuote tr td span:nth-child(6),
+.orderQuote tr td span:nth-child(7){
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.orderQuote tr td span:nth-child(2){
+    border-right: 1px solid rgba(255,255,255,0.3);
+    margin-right: 5px;
+}
+.orderQuote tr td span{
+    
+    padding: 10px;
+    margin-left:5px;
+    cursor: pointer;
+}
+
+
+.quoteFooter{
+    width:490px;
+    height:50px;
+    background:#000;
+}
+
+.quoteFooter > div{
+    line-height: 50px;
+    float: left;
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,0.3);
+}
+
+.quoteFooter > div:nth-child(1),
+.quoteFooter > div:nth-child(5){
+    width:45px;
+}
+.quoteFooter > div:nth-child(2),
+.quoteFooter > div:nth-child(4){
+    width:120px;
+}
+.quoteFooter > div:nth-child(3){
+    width:160px;
+    text-align: center;
+}
+.quoteFooter > div:nth-child(2){
+    text-align: right;
+}
+
+/*--------------tradeChart----*/
+
+.moneyTrade{
+    width:490px;
+    height:410px;
+    margin-bottom: 10px;
+    background:#000;
+}
+
+.tradeHead{
+    width:490px;
+    height:50px;
+    background:#000;
+}
+
+.tradeHead div{
+    line-height: 50px;
+    float: left;
+    width:163px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tradeHead div:nth-child(1){
+    box-shadow: 0px 3px 0px #f5b74c;
+    color:#f5b74c;
+}
+
+.tradeBody{
+    width:470px;
+    height:340px;
+    margin: 10px;
+}
+/*-----------매수, buying -------------------*/
+.buying div:not(:nth-child(4)):not(:nth-child(5)){/*주문총액,최소금액 제외 50px*/
+    width:470px;
+    height:50px;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+
+.buying div:nth-child(4){/*주문총액*/
+    height:80px;
+    line-height: 80px;
+    background: #111;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.buying div:nth-child(5){/*최소주문금액*/
+    height:30px;
+    line-height: 30px;
+}
+
+/*첫번쨰 줄*/
+.buying div:nth-child(1) div:nth-child(1),
+.buying div:nth-child(1) div:nth-child(2){
+    float: left;
+}
+.buying div:nth-child(1) div:nth-child(1){
+    width:100px;
+    height:50px;
+}
+.buying div:nth-child(1) div:nth-child(2){
+    text-align: right;
+    width:370px;
+    height:49px;
+    border-bottom: 1px solid #fff;
+}
+
+/*두번쨰 줄*/
+.buying div:nth-child(2) input{
+    position: relative;
+    top:-2px;
+    left:13px;
+    width:270px;
+    height:36px;
+    text-align: right;
+}
+.buying div:nth-child(2) select{
+    position: relative;
+    left:15px;
+    width:85px;
+    height:40px;
+    text-align: center;
+    border: 0px;
+    background:#000;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3); 
+}
+
+/*세번째 줄*/
+
+.buying div:nth-child(3) input{
+    position: relative;
+    top:-1px;
+    left:6px;
+    width:270px;
+    height:36px;
+    text-align: right;
+}
+
+.buying div:nth-child(3) .minus{
+    position: relative;
+    top:3px;
+    left:1px;
+    width:40px;
+    height:40px;
+    text-align: center;
+    font-size: 20pt;
+    background: #f5b74c;
+    border: 0px;
+    color:#000;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left:10px;
+}
+
+.buying div:nth-child(3) .plus{
+    position: relative;
+    left:1px;
+    top:3px;
+    width:40px;
+    height:40px;
+    text-align: center;
+    font-size: 20pt;
+    background: #f5b74c;
+    border: 0px;
+    color:#000;
+    font-weight: bold;
+    border-radius: 8px;
+}
+/*네번쨰 줄*/
+
+.buying div:nth-child(4) > span:nth-child(2){
+    float: right;
+}
+
+.buying div:nth-child(4) > span:nth-child(2) span:first-child{
+    color:#f5b74c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*마지막 줄 로그인*/
+.trade_login{
+    width:100px;
+    height:40px;
+    margin-right:5px;
+    border: 0px;
+    background:#959595;
+    color:#fff;
+    cursor: pointer;
+    
+}
+.trade_register{
+    width:360px;
+    border: 0px;
+    height:40px;
+    background: #f5b74c;
+    color:#fff;
+    cursor: pointer;
+}
+
+/*매도, selling -----------------------------*/
+
+.sell div:not(:nth-child(4)):not(:nth-child(5)){/*주문총액,최소금액 제외 50px*/
+    width:470px;
+    height:50px;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+
+.sell div:nth-child(4){/*주문총액*/
+    height:80px;
+    line-height: 80px;
+    background:#111;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.sell div:nth-child(5){/*최소주문금액*/
+    height:30px;
+    line-height: 30px;
+}
+
+/*첫번쨰 줄*/
+.sell div:nth-child(1) div:nth-child(1),
+.sell div:nth-child(1) div:nth-child(2){
+    float: left;
+}
+.sell div:nth-child(1) div:nth-child(1){
+    width:100px;
+    height:50px;
+}
+.sell div:nth-child(1) div:nth-child(2){
+    text-align: right;
+    width:370px;
+    height:49px;
+    border-bottom: 1px solid #fff;
+}
+
+/*두번쨰 줄*/
+.sell div:nth-child(2) input{
+    position: relative;
+    top:-2px;
+    left:13px;
+    width:270px;
+    height:36px;
+    text-align: right;
+}
+.sell div:nth-child(2) select{
+    position: relative;
+    left:8px;
+    width:85px;
+    margin-left: 10px;
+    height:40px;
+    text-align: center;
+    color:#fff;
+    background: #000;
+}
+/*세번째 줄*/
+
+.sell div:nth-child(3) input{
+    position: relative;
+    top:-1px;
+    left:6px;
+    width:270px;
+    height:36px;
+    text-align: right;
+}
+
+.sell div:nth-child(3) .minus{
+    position: relative;
+    top:3px;
+    left:1px;
+    width:48px;
+    height:40px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.sell div:nth-child(3) .plus{
+    position: relative;
+    left:1px;
+    top:3px;
+    width:48px;
+    height:40px;
+    text-align: center;
+    font-size: 20pt;
+}
+/*네번쨰 줄*/
+
+.sell div:nth-child(4) > span:nth-child(2){
+    float: right;
+}
+
+.sell div:nth-child(4) > span:nth-child(2) span:first-child{
+    color:#f5b74c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*마지막 줄 로그인*/
+
+.sell div:nth-child(3) .minus{
+    position: relative;
+    top:3px;
+    left:1px;
+    width:40px;
+    height:40px;
+    text-align: center;
+    font-size: 20pt;
+    background: #f5b74c;
+    border: 0px;
+    color:#000;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left:10px;
+}
+
+.sell div:nth-child(3) .plus{
+    position: relative;
+    left:1px;
+    top:3px;
+    width:40px;
+    height:40px;
+    text-align: center;
+    font-size: 20pt;
+    background: #f5b74c;
+    border: 0px;
+    color:#000;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.tnum2,.tnum3{
+    display: none;
+}
+
+/*tradeHistory 거래내역*/
+.tradeHistory{
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+.tradeHistory table{
+    color: #fff;
+    width:460px;
+}
+.tradeHistory table tr{
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.tradeHistory table tr th{
+    height:50px;
+}
+.tradeHistory table tr th input{
+    position: relative;
+    top:2px;
+}
+
+.tradeHistory table tr td{
+    height:40px;
+}
+
+.tradeHistory table tr td:nth-child(4){
+    text-align: center;
+}
+
+.tradeHistory table tr td:nth-child(5){
+    text-align: right;
+}
+
+/*---------------미니차트 miniChart-----*/
+
+.miniChart{
+    width:490px;
+    height:300px;
+    background:#000;
+}
+
+.mChartHead{
+    width:490px;
+    height:50px;
+    background:#000;
+}
+
+.mChartHead span{
+    line-height: 50px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.mChartHead select{
+    line-height: 50px;
+    float:right;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    height:30px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+/*article4 영역 코인(화폐)기타 */
+
+#article4{
+    width:990px;
+    height:450px;
+    margin-bottom: 10px;
+}
+
+.etcHead{
+    width:990px;
+    height:50px;
+    background:#000;
+    color:#fff;
+    box-shadow: inset 0px -1px 0px rgba(255,255,255,0.3);
+    cursor: pointer;
+    
+}
+
+.etcHead div{
+    float: left;
+    width:330px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+.etcHead div:nth-child(1){
+    box-shadow: inset 0px -3px 0px #f5b74c; 
+    color:#f5b74c;
+    font-weight: bold;
+}
+
+
+.conclusion{
+    width:970px;
+    text-align: center;
+    height:380px;
+    padding:10px;
+    background: #000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color:#fff;
+}
+
+.conclusion table{
+    width:950px;
+}
+.conclusion table tr:first-child{
+    height:40px;
+    border-bottom: 1px solid #eee;
+}
+
+.conclusion table tr:not(:first-child){
+    height:30px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+.dailyStandard{
+    width:970px;
+    text-align: center;
+    height:380px;
+    padding:10px;
+    background: #000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color:#fff;
+}
+
+.dailyStandard table{
+    width:950px;
+}
+
+.dailyStandard table tr:first-child{
+    height:40px;
+    border-bottom: 1px solid #eee;
+}
+
+.dailyStandard table tr:not(:first-child){
+    height:30px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+.coinData{
+    width:970px;
+    height:380px;
+    padding:10px;
+    background: #000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color:#fff;
+    
+}
+
+.coinData div{
+    float: left;
+}
+.coinData div ul li a{
+    color: #fff;
+}
+
+.coinDataLeft{
+    
+    width:470px;
+    margin-right: 10px;
+}
+
+
+.coinDataLeft h3{
+    line-height:40px;
+    font-size:12pt;
+    font-weight: bold;
+}
+
+.coinDataLeft div:nth-child(1){
+    width:470px;
+    height:100px;
+    margin-bottom: 10px;
+}
+.coinDataLeft div:nth-child(1) span{
+    
+    float: left;
+}
+.coinDataLeft div:nth-child(1) span p{
+    position: relative;
+    top:30px;
+    width:190px;
+    margin-left: 10px;
+}
+.coinDataLeft div:nth-child(1) span p b{
+    font-size: 12pt;
+}
+
+.coinDataLeft div:nth-child(1) span img{
+    width:100px;
+    height:100px;
+}
+
+.coinDataLeft table{
+    width:470px;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    margin-bottom: 10px;
+    color:#959595;
+}
+.coinDataLeft table tr{
+    height:30px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.coinDataLeft table th{
+    width:100px;
+    padding-left: 10px;
+    text-align: left;
+    background: #111;
+}
+
+.coinDataLeft table td{
+    padding-left: 10px;
+}
+
+
+
+
+.coinDataRight{
+    margin-top: 20px;
+    width:470px;
+}
+.coinDataRight h3{
+    font-size:12pt;
+    font-weight: bold;
+    line-height:40px;
+    
+}
+.coinDataRight table{
+    color:#959595;
+    width:470px;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    margin-bottom: 10px;
+}
+.coinDataRight table tr{
+    height:30px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.coinDataRight table th{
+    width:100px;
+    background:#111;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.coinDataRight table td{
+    padding-left: 10px;
+}
+
+
+
+.coinDataDetail h3{
+    font-size: 12pt;
+    line-height: 40px;
+}
+
+.coinDataDetail div{
+    margin-left:10px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+/*aside 영역*/
+.favorite{
+    cursor: pointer;
+}
+.coinSearch{
+    width:400px;
+    height:50px;
+    background: #000;
+}
+
+.coinSearch div{
+    float: left;
+}
+
+.coinSearch div:nth-child(1){
+    width:300px;
+}
+.coinSearch div:nth-child(1) input{
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 0px;
+    width:245px;
+    height:40px;
+    background: #000;
+    color:#fff;
+}
+.coinSearch div:nth-child(1) button{
+    position: relative;
+    top:-12px;
+    background: #000;
+    border: 0px;
+    margin:0px;
+}
+.coinSearch div:nth-child(1) button img{
+    margin:0px;
+    width:40px;
+    cursor: pointer;
+}
+
+.coinSearch div form{
+    height:50px;
+    margin:0px;
+}
+
+.coinSearch div:nth-child(2){
+    width:100px;
+    height:50px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 10pt;
+    box-shadow: inset 1px 0px 0px rgba(255,255,255,0.3);
+    color:#fff;
+}
+
+.coinSearch div:nth-child(2) img{
+    position: relative;
+    top:10px;
+    width:30px;
+}
+
+.coinTitle{
+    width:400px;
+    height:50px;
+    background: #000;
+    color:#fff;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.coinTitle li{
+    width:80px;
+    height:50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.coinTitle li:nth-child(1){
+    box-shadow: inset 0px -4px 0px #f5b74c;
+    color:#f5b74c;
+    font-weight: bold;
+}
+.sideScroll{/*오버플로우시 스크롤*/
+    width:400px;
+    height:580px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+
+.sideTable1{
+    width:383px;
+    color: #fff;
+}
+.sideTable1 tr{
+    height:40px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.sideTable1 tr td img{
+    width:30px;
+    cursor: pointer;
+}
+
+.sideTable1 tr th img{
+    cursor: pointer;
+}
+
+
+
+.sideTable2{
+    width:383px;
+    color: #fff;
+}
+.sideTable2 tr{
+    height:40px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.sideTable2 tr td img{
+    width:30px;
+}
+/*footer 영역*/
+#footer div{
+    float: left;
+}
+#footer div:nth-child(1){
+    position: relative;
+    top:100px;
+    width:100px;
+    height:200px;
+}
+
+#footer div:nth-child(2){
+    position: relative;
+    line-height: 33px;
+    top:100px;
+    width:1300px;
+    height:100px;
+    color: #fff;
+}
+
+
+/*-----------register.php*/
+#registerCenter{
+    position: relative;
+    left:200px;
+    width:500px;
+    height:220px;
+    margin:0 auto;
+    background: #000;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.registerHead{
+    width:500px;
+    height:50px;
+    font-weight: bold;
+    font-size:12pt;
+    line-height: 50px;
+    color: #f5b74c;
+    box-shadow: inset 0px -3px 0px rgba(255,255,255,0.5);
+    margin-bottom: 5px;
+}
+
+#registerCenter div{
+    width:460px;
+    height:50px;
+    line-height: 50px;
+    margin-left: 16px;
+}
+
+#registerCenter div input{
+    width:460px;
+    height:35px;
+    margin:0 auto;
+}
+.termsAllSelect img{
+    margin-top: 18px;
+}
+#registerTerms{
+    position: relative;
+    left:200px;
+    width:500px;
+    height:580px;
+    background: #000;
+    margin: 0 auto;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+#registerTerms div:first-child{
+    height:50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+#registerTerms div{
+    width:460px;
+    position: relative;
+    left:16px;
+    margin-bottom: 5px;
+}
+
+
+#registerTerms div textarea{
+    width:460px;
+    height:100px;
+}
+
+.registerSubmit{
+    width:460px;
+    height:50px;
+    margin-top:10px;
+    border-radius: 8px;
+    background:#ffce00;
+    border:0px;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.registerAnchor{
+    text-align: center;
+    line-height: 50px;
+    margin-left: 425px;
+}
+
+.registerAnchor a{
+    color: #f5b74c;
+}
+
+/*register popup*/
+
+#registerPopup{
+    display: none;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+
+.registerPopupCenter{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:500px;
+    height:430px;
+    margin-top:-215px;
+    margin-left:-250px;
+    background: #fff;
+    z-index: 9999;
+}
+
+.registerPopupHead{
+    width:460px;
+    margin-left:20px;
+    height: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 12pt;
+}
+
+.registerPopupContent{
+    width:460px;
+    margin-left:20px;
+    height: 50px;
+    line-height: 20px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+
+.cordResend div{
+    width:230px;
+    float: left;
+    width:230px;
+    height:50px;
+    position: relative;
+    left:20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cordResend div input{
+    width:215px;
+    height:40px;
+    position: relative;
+    left:20px;
+    border:0px;
+    background:#ff7300;
+    color:#fff;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+
+
+.registerPopupTextbox{
+    width:460px;
+    height:35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.registerPopupSubmit div{
+    width:230px;
+    float: left;
+}
+.registerPopupSubmit div:nth-child(2){
+    margin-left: 10px;
+}
+
+.registerPopupSubmit input{
+    width:225px;
+    height:50px;
+    position: relative;
+    left:20px;
+    border-radius: 8px;
+    border:0px;
+    background:#ffce00;
+    font-weight: bold;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+
+
+/*----------------login.php*/
+
+#loginCenter{
+    margin:0 auto;
+    position: relative;
+    left:200px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    width:500px;
+    height:300px;
+    background: #000;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    color:#fff;
+    
+}
+
+.loginHead{
+    width:460px;
+    margin-left: 16px;
+    height:50px;
+    font-weight: bold;
+    font-size:12pt;
+    line-height: 50px;
+    color: #f5b74c;
+    margin-bottom: 5px;
+}
+
+#loginCenter div{
+    width:460px;
+    height:50px;
+    line-height: 50px;
+    margin-left: 16px;
+}
+
+
+.loginTextbox{
+    width:460px;
+    height:35px;
+    margin:0 auto;
+}
+
+.loginSubmit{
+    width:460px;
+    height:50px;
+    margin-top:10px;
+    border-radius: 8px;
+    background:#ffce00;
+    border:0px;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.loginText{
+    position: relative;
+    top:25px;
+    height:25px;
+    line-height:25px;
+}
+.loginText a{
+    color: #f5b74c;
+}
+
+
+/*--------passwordSet.php*/
+
+
+#pwSetCenter{
+    margin:0 auto;
+    position: relative;
+    left:200px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    width:500px;
+    height:235px;
+    background: #000;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    
+}
+
+.pwSetHead{
+    width:460px;
+    margin-left: 16px;
+    height:50px;
+    font-weight: bold;
+    font-size:12pt;
+    line-height: 50px;
+    color: #f5b74c;
+    margin-bottom: 5px;
+}
+
+#pwSetCenter div{
+    width:460px;
+    height:50px;
+    line-height: 50px;
+    margin-left: 16px;
+}
+
+
+.pwSetTextbox{
+    width:460px;
+    height:35px;
+    margin:0 auto;
+}
+
+.pwSetSubmit{
+    width:460px;
+    height:50px;
+    margin-top:10px;
+    border-radius: 8px;
+    background:#ffce00;
+    border:0px;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+/* ----------authentication.php */
+#authentication1{
+    margin:0 auto;
+    position: relative;
+    left:200px;
+    width:500px;
+    height:260px;
+    background: #000;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    margin-top:10px;
+    color: #fff;
+}
+
+.authentication1Head{
+    width:460px;
+    height:50px;
+    margin-left: 20px;
+    line-height: 50px;
+    font-size: 12pt;
+    font-weight: bold;
+    color:#f5b74c;
+}
+
+.authentication1Body{
+    width:460px;
+    height:50px;
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+.authentication1Head a img{
+    margin-top: 9px;
+    float:right;
+}
+
+#authentication2{
+    margin:0 auto;
+    position: relative;
+    left:200px;
+    width:500px;
+    height:100px;
+    background: #000;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.authentication2Head{
+    width:460px;
+    height:50px;
+    margin-left: 20px;
+    line-height: 50px;
+    font-size: 12pt;
+    font-weight: bold;
+    color:#f5b74c;
+
+}
+.authentication2Head a img{
+    margin-top: 9px;
+    float:right;
+}
+
+.authentication2Body{
+    width:460px;
+    height:50px;
+    margin-left: 20px;
+}
+
+/* account.php ------------*/
+
+#accountCenter{
+    width:990px;
+    color: #fff;
+    background: #000;
+}
+
+.accountHead{
+    width:970px;
+    height:50px;
+    margin-left: 10px;
+}
+
+.accountHead ul{
+    float: right;
+}
+
+.accountHead ul li{
+    float: left;
+    width:100px;
+    height:35px;
+    border:1px solid #f5b74c;
+    margin-top:8px;
+    margin-left:5px;
+    text-align: center;
+}
+
+.accountHead ul li a{
+    line-height: 35px;
+    color: #f5b74c;
+}
+
+.accountTitle{
+    margin-left:10px;
+    font-size: 12pt;
+    color:#f5b74c;
+    font-weight: bold;
+    
+}
+.accountStep{
+    width:970px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.accountStep li{
+    width:186px;
+    height:186px;
+    float: left;
+    box-shadow: 0px 0px 1px #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.accountStep li a{
+    color:#fff;
+}
+
+.accountStep li:not(:last-child){
+    margin-right: 10px;
+}
+
+.accountStep li p:nth-child(1){
+    float: right;
+    margin-top:5px;
+    margin-right:5px;
+    margin-bottom: 20;
+}
+
+.accountStep li p:nth-child(2){
+    position: relative;
+    top:15px;
+    left:58px;
+    margin-top:10px;
+}
+
+.accountStep li p:nth-child(3){
+    width:70px;
+    line-height: 30px;
+    text-align: center;
+    margin-top:15px;
+    margin-left:58px;
+    font-weight: bold;
+}
+
+.accountStep li p:nth-child(4),
+.accountStep li p:nth-child(5){
+    width:186px;
+    margin-top:5px;
+    line-height: 15px;
+    text-align: center;
+}
+
+/*두번째 컨텐츠*/
+.member_data,
+.contact_data,
+.security_data,
+.connect_data,
+.quitAccount{
+    width:970px;
+    margin-left:10px;
+}
+
+.member_data li,
+.contact_data li
+{
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    height:150px;
+}
+
+.security_data li,
+.quitAccount li{
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    height:100px;
+}
+
+.security_data li p input{
+    width:200px;
+    height:25px;
+}
+
+
+
+.connect_data li{ /*테이블 있는 위치*/
+    height:200px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.member_data li input,
+.contact_data li input{
+    width:200px;
+    height:25px;
+}
+
+.member_data li:nth-child(1),
+.contact_data li:nth-child(1),
+.security_data li:nth-child(1),
+.connect_data li:nth-child(1),
+.quitAccount li:nth-child(1){
+    
+    float:left;
+    width:150px;
+    font-weight: bold;
+    color:#f5b74c;
+    font-size: 12pt;
+}
+
+.member_data li:nth-child(1) p,
+.contact_data li:nth-child(1) p,
+.security_data li:nth-child(1) p,
+.connect_data li:nth-child(1) p,
+.quitAccount li:nth-child(1) p{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.member_data li:nth-child(2) p,
+.contact_data li:nth-child(2) p,
+.security_data li:nth-child(2) p,
+.connect_data li:nth-child(2) table,
+.quitAccount li:nth-child(2) p{
+    margin:10px;
+}
+
+
+.connect_data li:nth-child(2) table{
+    width:820px;
+}
+
+.connect_data li:nth-child(2) table tr{
+    height:30px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+
+
+.quitAccount input{
+    width:100px;
+    height:35px;
+    background: #f5b74c;
+    color:#000;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+/*-------auth_smart.php */ 
+
+
+#authSmartCenter{
+    width:990px;
+    height:680px;
+    color:#fff;
+    background: #000;
+}
+
+.authSmartDiv li{
+    float: left;
+    width:490px;
+    height:500px;
+}
+.authSmartDiv li:nth-child(1){
+    margin-right: 10px;
+}
+
+.smartLeftTitle{
+    margin-top: 50px;
+    font-weight: bold;
+    color:#f5b74c;
+    font-size: 18pt;
+    margin-left:40px;
+}
+
+.authSmartDiv{
+}
+.authSmartDiv li:nth-child(1) p:nth-child(2){
+    margin-top: 10px;
+    margin-left:45px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+/*right*/
+
+
+.authSmartDiv li:nth-child(2) div{
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.authSmartDiv li:nth-child(2) div:nth-child(1){
+    margin-bottom: 10px;
+    height:340px;
+}
+.authSmartDiv li:nth-child(2) div:nth-child(2){
+    height:150px;
+}
+
+
+
+.smartAgree p img{
+    position: relative;
+    top:7px;
+}
+.smartAgree p:nth-child(1){
+    margin-top: 20px;
+}
+.smartAgree p:nth-child(1),
+.smartAgree p:nth-child(2),
+.smartAgree p:nth-child(4),
+.smartAgree p:nth-child(5),
+.smartAgree p:nth-child(7){
+    height:30px;
+    line-height: 30px;
+}
+
+.smartAgree p:nth-child(1),
+.smartAgree p:nth-child(2),
+.smartAgree p:nth-child(3),
+.smartAgree p:nth-child(5),
+.smartAgree p:nth-child(6){
+    margin-left:10px;
+}
+
+.smartAgree p textarea{
+    width:455px;
+    height:70px;
+}
+.smartAgree p:nth-child(4),
+.smartAgree p:nth-child(7){
+    margin-right: 10px;
+}
+
+.smartMemberData table{
+    width:455px;
+    height:120px;
+    margin-top:15px;
+    margin-left:10px;
+}
+
+.smartMemberData table tr td input{
+    height:25px;
+}
+
+.smartMemberData table tr td select{
+    height:29px;
+}
+
+.smartMemberData table tr:last-child td input{
+    position: relative;
+    top:-2px;
+    width:192px;
+}
+
+.smartMemberData table tr:nth-child(2) td input{
+    width:260px;
+}
+
+.authSmartBtn{
+    float: right;
+    margin-top: 80px;
+    margin-right: 10px;
+}
+
+.authSmartBtn li{
+    float:left;
+    background: #f5b74c;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+.authSmartBtn li:nth-child(1){
+    margin-right: 10px;
+    text-align: center;
+}
+.authSmartBtn li img{
+    position: relative;
+    top:8px;
+    left:-3px;
+}
+.authSmartBtn li a{
+    line-height: 35px;
+    color: #fff;
+}
+.authSmartBtn li input{
+    background: #f5b74c;
+    width: 100px;
+    height: 35px;
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* auth_otp.php -------------*/
+
+
+#authOtpCenter{
+    width:990px;
+    height:680px;
+    background: #000;
+}
+.authOtpDiv{
+}
+.authOtpDiv li{
+    float: left;
+    height:500px;
+    
+}
+.authOtpDiv li:nth-child(1){
+    margin-top: 50px;
+    margin-right: 10px;
+    width:490px;
+}
+
+.authOtpDiv li:nth-child(2){
+    margin-right: 10px;
+    width:445px;
+}
+
+.otpDownload,.otpQrcode,.qrcodeInsert{
+    margin-top: 30px;
+    margin-right: 10px;
+    width:478px;
+    border: 1px solid rgba(255,255,255,0.5);
+    color:#fff;
+}
+
+.otpDownload{
+    margin-bottom: 10px;
+    height:210px;
+}
+
+.otpLeftTitle{
+    font-weight: bold;
+    color:#f5b74c;
+    font-size: 18pt;
+    margin-left:40px;
+}
+
+.authOtpDiv li:nth-child(1) p:nth-child(2){
+    margin-top: 10px;
+    margin-left:45px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/*right*/
+.otpDownload1{
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 35px;
+}
+
+.otpDownload2{
+    width:420px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.store_logo p{
+    width:230px;
+    float: left;
+    margin-bottom: 5px;
+}
+.store_logo p:nth-child(1){
+    margin-right:12px;
+}
+.otp_logo a{
+    color: #fff;
+    font-weight: bold;
+    line-height: 45px;
+}
+.otp_logo p{
+    float: left;
+    width:220px;
+    height:45px;
+    line-height: 45px;
+    border:1px solid rgba(255,255,255,0.5);
+    border-radius: 3px;
+}
+
+.otp_logo p img{
+    position: relative;
+    top:3px;
+}
+
+.otp_logo p:nth-child(1){
+    margin-right: 10px;
+    margin-left:10px;
+}
+.otpQrcode{
+    margin-bottom: 10px;
+}
+
+.otpQrcode1{
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 35px;
+}
+
+.otpQrcode2{
+    width:420px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.otpQrcode3{
+    width:420px;
+    height:120px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.otpQrcode3 div{
+    float: left;
+}
+
+.otpQrcode3 div:nth-child(1){
+    width:120px;
+}
+
+.otpQrcode3 div:nth-child(2){
+    width:300px;
+}
+
+.otpQrcode3 div:nth-child(2) input{
+    width:200px;
+    height:35px;
+}
+
+.otpQrcode3 div p:nth-child(1){
+    font-weight: bold;
+    line-height: 25px;
+}
+
+
+.qrcodeInsert{
+    line-height: 55px;
+}
+
+.qrcodeInsert input:nth-child(1){
+    width:350px;
+    height:35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.qrcodeInsert input:nth-child(2){
+    width:102px;
+    height:37px;
+    background: #f5b74c;
+    line-height: 35px;
+    border: 0px;
+    color: #fff;
+}
+
+/*accountPopup*/
+
+.accountPopupStep1{
+    display: none;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+}
+
+.accountPopupStep1 ul{
+    position: fixed;
+    top:50%;
+    left:50%;
+    height:50%;
+    margin-top: -200px;
+    margin-left: -250px;
+    width:500px;
+    height:400px;
+    background: #fff;
+}
+
+.accountPopupStep1 ul li{
+    width:480px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.accountPopupStep1 ul li:nth-child(1){
+    line-height: 35px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.accountPopupStep1 ul li:nth-child(1) span:nth-child(2) img{
+    position: relative;
+    top:5px;
+    float: right;
+    cursor: pointer;
+}
+.accountPopupStep1 ul li:nth-child(2){
+    margin-top: 20px;
+}
+.accountPopupStep1 ul li:nth-child(2),
+.accountPopupStep1 ul li:nth-child(3){
+    margin-left: 30px;
+}
+.accountPopupStep1 ul li:nth-child(4) select{
+    margin-top: 10px;
+    margin-left: 20px;
+    width:433px;
+    height:30px;
+}
+.accountPopupStep1 ul li:nth-child(5) input,
+.accountPopupStep1 ul li:nth-child(6) input,
+.accountPopupStep1 ul li:nth-child(7) input{
+    margin-top: 5px;
+    margin-left: 20px;
+    width:430px;
+    height:30px;
+}
+.accountPopupStep1 ul li:nth-child(8) input:nth-child(1){
+    margin-left: 20px;
+}
+.accountPopupStep1 ul li:nth-child(8) input{
+    margin-top: 10px;
+    background: #ff7300;
+    color: #fff;
+    border: 0px;
+    width:215px;
+    height:35px;
+    cursor: pointer;
+    
+}
+
+
+
+
+.accountPopupStep2{
+    display: none;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+}
+
+.accountPopupStep2 ul{
+    position: fixed;
+    top:50%;
+    left:50%;
+    height:50%;
+    margin-top: -155px;
+    margin-left: -250px;
+    width:500px;
+    height:310px;
+    background: #fff;
+}
+
+
+.accountPopupStep2 ul li{
+    width:480px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.accountPopupStep2 ul li:nth-child(1){
+    line-height: 35px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.accountPopupStep2 ul li:nth-child(1) span:nth-child(2) img{
+    position: relative;
+    top:5px;
+    float: right;
+    cursor: pointer;
+}
+
+
+.accountPopupStep2 ul li:nth-child(2){
+    margin-top: 20px;
+}
+.accountPopupStep2 ul li:nth-child(2),
+.accountPopupStep2 ul li:nth-child(3),
+.accountPopupStep2 ul li:nth-child(5){
+    margin-left: 30px;
+}
+.accountPopupStep2 ul li:nth-child(4){
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.accountPopupStep2 ul li:nth-child(4) input{
+    width:430px;
+    height:30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.accountPopupStep2 ul li:nth-child(5) img{
+    position: relative;
+    left:210px;
+}
+.accountPopupStep2 ul li:last-child input:nth-child(1){
+    margin-left: 20px;
+    background: #ff7300;
+}
+.accountPopupStep2 ul li:last-child input:nth-child(2){
+    background: #959595;
+}
+.accountPopupStep2 ul li:last-child input{
+    margin-top: 10px;
+    color: #fff;
+    border: 0px;
+    width:215px;
+    height:35px;
+    cursor: pointer;
+    
+}
+
+
+.accountPopupStep3{
+    display: none;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+}
+
+.accountPopupStep3 ul{
+    position: fixed;
+    top:50%;
+    left:50%;
+    height:50%;
+    margin-top: -214px;
+    margin-left: -250px;
+    width:500px;
+    height:428px;
+    background: #fff;
+}
+
+.accountPopupStep3 ul li:not(:nth-child(1)){
+    width:460px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.accountPopupStep3 ul li:nth-child(1){
+    width:480px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.accountPopupStep3 ul li:nth-child(1){
+    line-height: 35px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.accountPopupStep3 ul li:nth-child(1) span:nth-child(2) img{
+    position: relative;
+    top:5px;
+    float: right;
+    cursor: pointer;
+}
+
+.accountPopupStep3 ul li:last-child input{
+    width:465px;
+    height:40px;
+    background:#ff7300;
+    color: #fff;
+    cursor: pointer;
+    border: 0px;
+    margin-top: 10px;
+}
+
+.accountPopupStep3 ul li p{
+    line-height: 25px;
+}
+
+.accountPopupStep3 ul li:not(:nth-child(7)) input{
+    width:460px;
+    height: 30px;
+}
+
+/*auth_identity.php*/
+
+.identityPopup{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index:11111;
+}
+
+.identityPopupCenter{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-300px;
+    width:600px;
+    height:200px;
+    background: #fff;
+}
+
+.identityPopupCenter li:nth-child(1){
+    width:100%;
+    height:40px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+.identityLeftTitle{
+    margin-top: 50px;
+    margin-left:40px;
+    font-weight: bold;
+    font-size: 18pt;
+    color:#f5b74c;
+}
+
+.identityLeftContent{
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: #fff;
+}
+.identityPopupCenter li:nth-child(1) p{
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.identityPopupCenter li:nth-child(2){
+    width:560px;
+    height:40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 11pt;
+}
+
+.identityPopupCenter li:nth-child(3){
+    width:560px;
+    height:40px;
+    margin-left: 20px;
+    font-size: 9pt;
+}
+
+.identityPopupCenter li:nth-child(4) input{
+    position: relative;
+    left:250px;
+    width:100px;
+    height:35px;
+    background: #f5b74c;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+#authIdentityCenter{
+    width:990px;
+    height:1120px;
+    background: #000;
+}
+.authIdentityDiv li{
+    float: left;
+    width:490px;
+}
+
+.authIdentityDiv li:nth-child(1){
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.authIdentityRight{
+    margin-top: 30px;
+    width:490px;
+}
+
+.authIdentity1{
+    width:470px;
+    height:100px;
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-left:10px;
+    margin-top: 10px;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+.authIdentity1 span{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.authIdentity1 input[type="text"]{
+    width:300px;
+    line-height:30px;
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-right:10px;
+}
+
+.authIdentity1 label{
+    color: #f5b74c;
+    cursor: pointer;
+}
+
+
+
+.authIdentity2{
+    width:470px;
+    height:100px;
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-left:10px;
+    margin-top: 10px;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+.authIdentity2 span{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.authIdentity2 input[type="text"]{
+    width:300px;
+    line-height:30px;
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-right:10px;
+}
+
+.authIdentity2 label{
+    color: #f5b74c;
+    cursor: pointer;
+}
+
+
+.authIdentityRight p{
+    color: #fff;
+    width:470px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+
+.identityAgree{
+    width:470px;
+    height:390px;
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-left:10px;
+    margin-top: 10px;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+.identityAgree p:nth-child(2),
+.identityAgree p:nth-child(5){
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.identityAgree p textarea{
+    width:448px;
+    height:100px;
+}
+.identityAllAgree{
+    width:448px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.identityAllAgree{
+    width:460px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.identitySubmit input{
+    width:100px;
+    height:35px;
+    border: 0px;
+    color:#fff;
+    background: #f5b74c;
+    margin-bottom: 50px;
+    float: right;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.identityAgreeEach{
+    position: relative;
+    right:20px;
+}
+.identityAgree p img{
+    position: relative;
+    top:4px;
+}
+/*----------------notice.php*/
+#noticeCenter{
+    width:1000px;
+    margin-left: 200px;
+    background: #000;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.noticeH1{
+    width:980px;
+    padding-top: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.noticeTableTitle{
+    width:1000px;
+    height:50px;
+    line-height: 50px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+}
+
+.noticeTableTitle li{
+    float: left;
+    width:50px;
+    cursor: pointer;
+    text-align: center;
+}
+.noticeContent{
+    width:1000px;
+    margin-bottom: 10px;
+}
+
+.noticeContent tr:nth-child(1){
+    height: 50px;
+    background: #333;
+    color: #fff;
+}
+
+.noticeContent tr:not(:nth-child(1)){
+    height: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.noticeContent tr th:nth-child(2){
+    text-align: left;
+    width:600px;
+}
+
+.noticeContent tr th:nth-child(1){
+    width:100px;
+}
+.noticeContent tr th:nth-child(3){
+    width:150px;
+}
+.noticeContent tr th:nth-child(4){
+    width:150px;
+}
+.noticeContent tr td:not(:nth-child(2)){
+    text-align: center;
+}
+
+.noticeContent tr td:nth-child(2){
+    cursor: pointer;
+}
+.noticeContent tr td:nth-child(2) a{
+    color:#fff;
+    line-height: 40px;
+    display: inline-block;
+    width:590px;
+}
+
+/*-=-----notice_read.php*/
+.noticeReadTitle{
+    width:980px;
+    height:50px;
+    font-size: 16pt;
+    line-height: 50px;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color:#f5b74c;
+}
+
+.noticeReadContent{
+    margin-left:10px;
+    padding-bottom: 250px;
+    
+}
+
+/*----------investment.php---*/
+
+#investmentCenter{
+    background: #000;
+    height:1000px;
+    color:#fff;
+}
+
+.investmentTitle{
+    height:50px;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+}
+
+.investmentTitle li{
+    float:left;
+    width:247px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.investmentTitle li:nth-child(1){
+    box-shadow:0px 3px 0px #f5b74c;
+    color:#f5b74c;
+}
+
+
+.investmentBody1,
+.investmentBody2,
+.investmentBody3{
+    display: none;
+}
+
+.body1Title{
+    height:50px;
+    line-height: 50px;
+    padding-right: 10px;
+    background: #222;
+}
+
+.body1Title img{
+    position: relative;
+    top:10px;
+    cursor: pointer;
+}
+
+.investmentBody1Q_1{
+    display: none;
+    position: absolute;
+    top:170px;
+    left:60%;
+    background: #333;
+    width:250px;
+    height:930px;
+    border:1px solid rgba(255,255,255,0.3);
+    color:#fff;
+}
+
+.investmentBody1Q_1 p{
+    width:240px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    line-height: 15px;
+}
+
+.investmentBody1T_1{
+    width:990px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.investmentBody1T_1 tr{
+    height:40px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.investmentBody1T_1 tr th{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.investmentBody1T_2{
+    width:990px;
+    margin-bottom: 40px;
+}
+.investmentBody1T_2 tr th{
+
+    height:50px;
+    background: #333;
+}
+.investmentBody1T_2 tr td{
+    text-align: center;
+    height:40px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+
+
+.investmentBody1 p{
+    width:990px;
+    height:50px;
+    line-height: 50px;
+}
+
+.investmentBody1 p select{
+    position: relative;
+    top:2px;
+    width:100px;
+    height:40px;
+    border: 1px solid #f5b74c;
+    color:#f5b74c;
+    margin-right: 10px;
+    background:#000;
+}
+
+
+.investmentBody2T{
+    width:990px;
+    margin-bottom: 50px;
+}
+.investmentBody2T tr th{
+    height:50px;
+    background: #333;
+}
+
+.investmentBody2T_1Q{
+    display: none;
+    position: absolute;
+    top:222px;
+    left:32%;
+    width:180px;
+    height:80px;
+    background: #000;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.investmentBody2T_1Q p{
+    margin-top: 10px;
+    margin-left:10px;
+    line-height: 20px;
+    color: #fff;
+}
+.investmentBody2T tr td{
+    height:40px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+.investmentBody2T tr th:nth-child(5){
+    line-height: 50px;
+}
+.investmentBody2T tr th:nth-child(5) img{
+    position: relative;
+    top:10px;
+    left:5px;
+    cursor: pointer;
+}
+
+
+
+.investmentBody3T{
+    width:990px;
+    margin-bottom: 50px;
+}
+
+.investmentBody3T tr th{
+    height:50px;
+    background: #333;
+}
+
+.investmentBody3T tr td{
+    height:40px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+
+
+.investmentBody4T{
+    width:990px;
+    margin-bottom: 50px;
+}
+
+.investmentBody4T tr th{
+    height:50px;
+    background: #333;
+}
+
+.investmentBody4T tr td{
+    height:40px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+
+
+
+/*-------------------wallet.php--*/
+#walletCenter{
+    background: #000;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    padding-bottom: 36px;
+}
+
+.walletHeader{
+    display: inline-block;
+    width:954px;
+    height:150px;
+    margin-top: 36px;
+    margin-left: 36px;
+}
+.walletHeader div{
+    width:fit-content;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+    padding: 25px;
+}
+.walletHeader p:nth-child(1){
+    color: #f5b74c;
+}
+.walletHeader p:nth-child(2){
+    margin-top:20px;
+    color: #fff;
+}
+.walletHeader span{
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.walletBody{
+    
+}
+
+.walletBody1T{
+    width:920px;
+    margin-left: 36px;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.walletBody1T tr th{
+    height:60px;
+    text-align: center;
+    background: #333;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+}
+
+.walletBody1T tr td{
+    height:67px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+}
+.walletBody1T tr td div:nth-child(1){
+    width:24px;
+    height:24px;
+    float: left;
+    margin:14px 0 0 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+.walletBody1T tr td div:nth-child(2){
+    height:36px;
+    float: left;
+    margin-top: 11px;
+    margin-left: 12px;
+}
+.walletBody1T tr td div:nth-child(2) p{
+    float: none;
+    font-weight: bold;
+}
+.walletBody1T tr td div:nth-child(2) p+p{
+    font-weight: normal;
+    margin-top:3px;
+    text-align: left;
+}
+
+.walletBody1T a{
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.walletBody div{
+    height:26px;
+    margin-top: 28px;
+    margin-right: 34px;
+}
+.walletBody div p{
+    float:right;
+}
+.walletBody div p label{
+    color: #fff;
+}
+
+.walletBody2T{
+    width:920px;
+    margin-left: 36px;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.walletBody2T tr th{
+    height:60px;
+    text-align: center;
+    background: #333;
+    border-bottom:1px solid rgba(255,255,255,0.5);
+    color: #fff;
+}
+
+.walletBody2T tr td{
+    height:69px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+}
+
+.walletBody2T tr td div:nth-child(1){
+    width:24px;
+    height:24px;
+    float: left;
+    margin:14px 0 0 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+.walletBody2T tr td div:nth-child(2){
+    height:36px;
+    float: left;
+    margin-top: 11px;
+    margin-left: 12px;
+}
+.walletBody2T tr td div:nth-child(2) p{
+    float: none;
+    font-weight: bold;
+}
+.walletBody2T tr td div:nth-child(2) p+p{
+    font-weight: normal;
+    margin-top:3px;
+    text-align: left;
+}
+
+.walletBody2T a{
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+/**/
+.walletDepositPopup{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.7);
+    z-index:99999;
+}
+
+.walletDepositPopup ul{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -285px;
+    margin-left: -290px;
+    width: 570px;
+    height: 580px;
+    background:#fff;
+    border-radius:4px;
+}
+
+.walletDepositPopup li:nth-child(1){
+    height:68px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding:0 20px;
+}
+.walletDepositPopup select{
+    height: 40px;
+    padding: 0 10px 0 5px;
+    margin-top: 16px;
+    font-weight: bold;
+    border: none;
+}
+.walletDepositPopup img{
+    position: relative;
+    top: 27px;
+    float: right;
+    cursor: pointer;
+}
+
+.walletDepositPopup li:nth-child(2){
+    height:48px;
+    margin: 0 48px;
+}
+.walletDepositPopup li:nth-child(2) p{
+    font-weight: bold;
+    line-height: 65px;
+}
+.walletDepositPopup li:nth-child(2) p span{
+    font-size: 11px;
+    float: right;
+}
+
+.walletDepositPopup li:nth-child(3){
+    height:80px;
+    margin: 0 48px;
+}
+.walletDepositPopup li:nth-child(3) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletDepositPopup li:nth-child(3) p+p{
+    height:48px;
+}
+
+.walletDepositPopup li:nth-child(4){
+    height:80px;
+    margin: 0 48px;
+}
+.walletDepositPopup li:nth-child(4) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletDepositPopup li:nth-child(4) p+p{
+    height:48px;
+}
+
+.walletDepositPopup li:nth-child(5){
+    height:80px;
+    margin: 0 48px;
+}
+.walletDepositPopup li:nth-child(5) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletDepositPopup li:nth-child(5) p+p{
+    height:48px;
+}
+
+.walletDepositPopup li:nth-child(6){
+    height:80px;
+    margin: 0 48px;
+}
+.walletDepositPopup li:nth-child(6) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletDepositPopup li:nth-child(6) p+p{
+    height:48px;
+}
+
+.walletDepositPopup li input[type=text]{
+    width:calc(100% - 2px);
+    height:38px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    background: #fafafa;
+    margin-top: 8px;
+}
+
+.walletDepositPopup li:nth-child(7){
+    height:72px;
+    text-align: center;
+}
+.walletDepositPopup li input[type=button]{
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    background: #fff;
+    padding: 12px 60px;
+    margin-top: 32px;
+    color: #888;
+    font-weight: bold;
+    cursor: pointer;
+}
+.walletDepositPopup li:nth-child(8){
+    height:40px;
+    margin-top: 31px;
+    background: #f5b74c;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.walletDepositPopup li:nth-child(8) div{
+    height:30px;
+    background: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/**/
+.walletWithdrawPopup{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.7);
+    z-index:99999;
+}
+
+.walletWithdrawPopup ul{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -285px;
+    margin-left: -290px;
+    width: 570px;
+    height: 580px;
+    background:#fff;
+    border-radius:4px;
+}
+
+.walletWithdrawPopup li:nth-child(1){
+    height:68px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding:0 20px;
+}
+.walletWithdrawPopup select{
+    height: 40px;
+    padding: 0 10px 0 5px;
+    margin-top: 16px;
+    font-weight: bold;
+    border: none;
+}
+.walletWithdrawPopup img{
+    position: relative;
+    top: 27px;
+    float: right;
+    cursor: pointer;
+}
+
+.walletWithdrawPopup li:nth-child(2){
+    height:48px;
+    margin: 0 48px;
+}
+.walletWithdrawPopup li:nth-child(2) p{
+    font-weight: bold;
+    line-height: 65px;
+}
+.walletWithdrawPopup li:nth-child(2) p span{
+    font-size: 11px;
+    float: right;
+}
+
+.walletWithdrawPopup li:nth-child(3){
+    height:80px;
+    margin: 0 48px;
+}
+.walletWithdrawPopup li:nth-child(3) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletWithdrawPopup li:nth-child(3) p+p{
+    height:48px;
+}
+
+.walletWithdrawPopup li:nth-child(4){
+    height:80px;
+    margin: 0 48px;
+}
+.walletWithdrawPopup li:nth-child(4) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletWithdrawPopup li:nth-child(4) p+p{
+    height:48px;
+}
+
+.walletWithdrawPopup li:nth-child(5){
+    height:80px;
+    margin: 0 48px;
+}
+.walletWithdrawPopup li:nth-child(5) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletWithdrawPopup li:nth-child(5) p+p{
+    height:48px;
+}
+
+.walletWithdrawPopup li:nth-child(6){
+    height:80px;
+    margin: 0 48px;
+}
+.walletWithdrawPopup li:nth-child(6) p{
+    height:32px;
+    line-height: 44px;
+}
+.walletWithdrawPopup li:nth-child(6) p+p{
+    height:48px;
+}
+
+.walletWithdrawPopup li input[type=text]{
+    width:calc(100% - 2px);
+    height:38px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    background: #fafafa;
+    margin-top: 8px;
+}
+
+.walletWithdrawPopup li:nth-child(7){
+    height:72px;
+    text-align: center;
+}
+.walletWithdrawPopup li input[type=button]{
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    background: #fff;
+    padding: 12px 60px;
+    margin-top: 32px;
+    color: #888;
+    font-weight: bold;
+    cursor: pointer;
+}
+.walletWithdrawPopup li:nth-child(8){
+    height:40px;
+    margin-top: 31px;
+    background: #f5b74c;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.walletWithdrawPopup li:nth-child(8) div{
+    height:30px;
+    background: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+/*----------------krw_deposit.php---*/
+#krwDepositCenter{
+    background: #000;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    padding-bottom:36px;
+}
+
+.krwDepositHeader{
+    display: inline-block;
+    width:954px;
+    height: 69px;
+    margin-top:48px;
+    margin-left: 36px;
+}
+.krwDepositHeader p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.krwDepositHeader p+p{
+    margin-top: 27px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.krwDepositBody1{
+    clear: both;
+    margin-left: 36px;
+}
+
+.krwDepositBody1 p{
+    width:600px;
+}
+.krwDepositBody1 p a{
+    float: right;
+    height:20px;
+    color: #f5b74c;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.krwDepositBody1 p+p{
+    height:50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f5b74c;
+    line-height: 70px;
+}
+.krwDepositBody1 div{
+    width:598px;
+    height:93px;
+    margin-top: 22px;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.krwDepositBody1 div input{
+    width:466px;
+    height:34px;
+    margin-top: 24px;
+    margin-left: 24px;
+    padding: 0 20px;
+    border: 1px solid #f5b74c;
+    border-radius: 4px;
+    color: #fff;
+    background: #000;
+    text-align: right;
+}
+.krwDepositBody1 div span{
+    margin-left: 12px;
+    line-height: 36px;
+    color: #fff;
+}
+.krwDepositBody1 div div{
+    height:8px;
+    background: #333;
+    margin-top: 24px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.krwDepositBody2{
+    width:600px;
+    margin-left: 36px;
+}
+.krwDepositBody2 p{
+    height:48px;
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f5b74c;
+    line-height: 40px;
+}
+
+.krwDepositBody2 ul{
+    width:calc(100% - 26px);
+    height:54px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-bottom: none;
+    padding-left: 24px;
+}
+.krwDepositBody2 ul li:nth-child(1){
+    width:122px;
+    height:53px;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    line-height: 53px;
+    color: #fff;
+}
+.krwDepositBody2 ul li:nth-child(2){
+    width:428px;
+    height:53px;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    line-height: 53px;
+    color: #fff;
+}
+
+.krwDepositBody2 ul+ul{
+    width:calc(100% - 26px);
+    height:54px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: none;
+    border-bottom: none;
+    padding-left: 24px;
+}
+
+.krwDepositBody2 ul+ul+ul{
+    width:calc(100% - 26px);
+    height:53px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: none;
+    padding-left: 24px;
+}
+.krwDepositBody2 ul+ul+ul li:nth-child(1){
+    border-bottom: none;
+}
+.krwDepositBody2 ul+ul+ul li:nth-child(2){
+    border-bottom: none;
+}
+.krwDepositBody2 div{
+    width:calc(100% - 2px);
+    height:75px;
+    background: #333;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: none;
+}
+.krwDepositBody2 div input{
+    border-radius: 4px;
+    background: #f5b74c;
+    color: #fff;
+    text-align: center;
+    padding: 14px 40px;
+    border: none;
+    float: right;
+    margin: 16px 24px 0 0;
+    cursor: pointer;
+}
+
+.krwDepositBody3{
+    width:600px;
+    margin-top: 58px;
+    margin-left: 36px;
+}
+
+.krwDepositBody3 p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #f5b74c;
+}
+.krwDepositBody3 ul{
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+.krwDepositBody3 li{
+    list-style: disc;
+    line-height: 20px;
+    margin-left: 12px;
+    color: #fff;
+}
+
+.krwDepositBody3 p:nth-child(2){
+    color:pink;/*test*/
+}
+
+.krwDepositBody3 div{
+    margin-top: 57px;
+    margin-left: 294px;
+}
+.krwDepositBody3 div input{
+    width:146px;
+    height:34px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: #000;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+.krwDepositBody3 div input+input{
+    width:146px;
+    height:34px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: #fff;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 10px;
+}
+
+
+/*---------------------krw_withdraw.php----*/
+#krwWithdrawCenter{
+    background: #000;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+    padding-bottom: 36px;
+}
+
+.krwWithdrawHeader{
+    display: inline-block;
+    width:954px;
+    height:69px;
+    margin-top: 48px;
+    margin-left: 36px;
+}
+.krwWithdrawHeader p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.krwWithdrawHeader p+p{
+    margin-top: 27px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.krwWithdrawBody1{
+    clear: both;
+    margin-top: 60px;
+    margin-left: 36px;
+}
+.krwWithdrawBody1 p{
+    height:16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f5b74c;
+}
+.krwWithdrawBody1 div{
+    width:598px;
+    height:298px;
+    margin-top: 23px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 4px;
+    background: #333;
+}
+.krwWithdrawBody1 div ul:nth-child(1){
+    height:14px;
+    margin: 25px 24px 0;
+}
+.krwWithdrawBody1 div ul:nth-child(1) li:nth-child(1){
+    float: left;
+    color: #fff;
+}
+.krwWithdrawBody1 div ul:nth-child(1) li:nth-child(2){
+    float:right;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+.krwWithdrawBody1 div ul:nth-child(1) li:nth-child(2) span{
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 35px;
+}
+
+.krwWithdrawBody1 div div{
+    clear: both;
+    width:598px;
+    height:225px;
+    background: #000;
+    border-left: none;
+    border-right: none;
+}
+.krwWithdrawBody1 div div input{
+    width:460px;
+    height:34px;
+    margin: 24px 0 0 24px;
+    border: 1px solid #f5b74c;
+    border-radius: 4px;
+    text-align: right;
+    padding: 0 16px;
+    background: #000;
+    color: #fff;
+}
+
+.krwWithdrawBody1 div div span{
+    margin-left: 28px;
+    color: #fff;
+}
+.krwWithdrawBody1 div div div{
+    position:relative;
+    width:485px;
+    height:16px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 0px;
+    border: none;
+}
+.krwWithdrawBody1 div div div div:nth-child(1){
+    position:absolute;
+    top:0;
+    left:0;
+    width:14px;
+    height:14px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    background: #fff;
+    margin: 0;
+    z-index: 10;
+}
+.krwWithdrawBody1 div div div div:nth-child(2){
+    position:absolute;
+    top:5px;
+    left:0;
+    width:428px;
+    height:6px;
+    margin: 0;
+    border-radius: 4px;
+    background: #f5b74c;
+    z-index: 5px;
+}
+.krwWithdrawBody1 div div div span{
+    float: right;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.krwWithdrawBody1 div div ul{
+    height: 53px;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+.krwWithdrawBody1 div div ul li:nth-child(1){
+    width:100px;
+    margin-top: 20px;
+    float: left;
+    color: #fff;
+}
+.krwWithdrawBody1 div div ul li:nth-child(2){
+    float: right;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+.krwWithdrawBody1 div div ul li:nth-child(2) span{
+    font-size: 12px;
+    font-weight: normal;
+}
+.krwWithdrawBody1 div div ul+ul{
+    margin-top:0;
+}
+
+.krwWithdrawBody2{
+    position:relative;
+    width:600px;
+    margin-left: 36px;
+}
+.krwWithdrawBody2 p{
+    height:70px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f5b74c;
+    line-height: 90px;
+}
+
+.krwWithdrawBody2 ul{
+    width:calc(100% - 26px);
+    height:54px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-bottom: none;
+    padding-left: 24px;
+}
+
+.krwWithdrawBody2 ul li:nth-child(1){
+    width:122px;
+    height:53px;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+    line-height: 53px;
+}
+.krwWithdrawBody2 ul li:nth-child(2){
+    width:428px;
+    height:53px;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+    line-height: 53px;
+}
+.krwWithdrawBody2 ul+ul{
+    width:calc(100% - 26px);
+    height:54px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: none;
+    border-bottom: none;
+    padding-left: 24px;
+}
+.krwWithdrawBody2 ul+ul+ul{
+    width:calc(100% - 26px);
+    height:53px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: none;
+    padding-left: 24px;
+}
+.krwWithdrawBody2 ul+ul+ul li:nth-child(1),.krwWithdrawBody2 ul+ul+ul li:nth-child(2){
+    border-bottom: none;
+}
+.krwWithdrawBody2 div input{
+    border-radius: 4px;
+    background: #f5b74c;
+    color: #fff;
+    text-align: center;
+    padding: 14px 40px;
+    border: none;
+    float: right;
+    margin: 16px 24px 0 0;
+    cursor: pointer;
+}
+.krwWithdrawBody2 div{
+    height:75px;
+    background: #333;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: none;
+}
+.krwWithdrawBody2 div+div{
+    position:absolute;
+    top:190px;
+    right:-325px;
+    width:fit-content;
+    height:36px;
+    background: none;
+    border: none;
+}
+.krwWithdrawBody2 div+div input{
+    width:146px;
+    height:34px;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: #000;
+    margin: 0;
+    color: #fff;
+    line-height: 34px;
+    padding: 0;
+    float: left;
+    font-weight: bold;
+}
+.krwWithdrawBody2 div+div input+input{
+    margin-left: 10px;
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+}
+.krwWithdrawBody3{
+    width: 600px;
+    margin-top: 58px;
+    margin-left: 36px;
+}
+
+.krwWithdrawBody3 p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+.krwWithdrawBody3 ul{
+    margin-top: 24px;
+}
+.krwWithdrawBody3 li{
+    list-style: disc;
+    line-height: 20px;
+    margin-left: 12px;
+    color: #fff;
+}
+.krwWithdrawBody3 li a{
+    color: #f5b74c;
+    cursor: pointer;
+}
